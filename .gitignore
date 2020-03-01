@@ -6,11 +6,9 @@
 ######################
 # Node
 ######################
-/node/**
+node
 node_modules
-/frontend/node/**
-/frontend/public/**
-
+public
 ######################
 # Bower
 ######################

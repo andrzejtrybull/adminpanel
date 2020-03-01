@@ -23,9 +23,9 @@ public class HelloController {
         this.procesor = procesor;
     }
 
-    @RequestMapping("/api/")
+    @RequestMapping(value = "/api/appinfo", method = RequestMethod.GET)
     String hello() {
-        return "index";
+        return "Administrator";
     }
 
     @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
