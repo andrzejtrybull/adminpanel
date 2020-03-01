@@ -25,7 +25,7 @@ public class HelloController {
 
     @RequestMapping(value = "/api/appinfo", method = RequestMethod.GET)
     String hello() {
-        return "Administrator";
+        return "Hello from adminpanel Spring Boot Application";
     }
 
     @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
