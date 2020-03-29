@@ -1,20 +1,22 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import HelloWorld from "./components/HelloWorld";
-import LoginForm from "./components/LoginForm";
 
-Vue.config.productionTip = false
-Vue.use(VueRouter)
+Vue.config.productionTip = false;
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    component: HelloWorld
+    component: () => import('@/components/HelloWorld')
+  },
+  {
+    path: '/about',
+    component: () => import('@/components/About')
   },
   {
     path: '/loginform',
-    component: LoginForm
+    component: () => import('@/components/LoginForm')
   }
 ];
 
