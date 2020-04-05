@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <h1 class="title is-0">Użytkownicy</h1>
-        <b-button class="is-primary is-pulled-right" tag="router-link" to="/newuser">Nowy</b-button>
+        <b-button class="is-primary is-pulled-right" tag="router-link"
+                  :to="{ path: '/newuser', params: { id: 0}}">Nowy</b-button>
         <b-table
             :data="users"
             :loading="loading"

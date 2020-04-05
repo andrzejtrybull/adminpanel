@@ -2,7 +2,7 @@
     <div class="container">
         <h1 class="title is-0">Użytkownik</h1>
         <p>
-            Aaaa
+            User id : {{ id }}
         </p>
     </div>
 </template>
@@ -10,11 +10,13 @@
 <script>
     export default {
         name: "UserForm",
-        props: [ 'id' ],
         data() {
             return {
-
+                id: 0
             }
+        },
+        created() {
+            this.id = this.$route.params.id;
         }
     }
 </script>

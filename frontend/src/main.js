@@ -29,9 +29,6 @@ const routes = [
   },
   {
     path: '/newuser/:id',
-    props: {
-      id: id
-    },
     component: () => import('@/components/UserForm')
   },
   {
